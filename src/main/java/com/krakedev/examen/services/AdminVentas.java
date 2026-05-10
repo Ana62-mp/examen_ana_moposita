@@ -2,8 +2,11 @@ package com.krakedev.examen.services;
 
 import java.util.ArrayList;
 
+import org.springframework.stereotype.Service;
+
 import com.krakedev.examen.entidades.Vendedor;
 
+@Service
 public class AdminVentas {
 	private ArrayList<Vendedor> vendedores;
 
@@ -13,13 +16,18 @@ public class AdminVentas {
 
 	public ArrayList<Vendedor> getVendedores() {
 		return vendedores;
-	}
+	} 
 
 	public void setVendedores(ArrayList<Vendedor> vendedores) {
 		this.vendedores = vendedores;
 	}
 
 	public void agregar(Vendedor vendedor) {
+		for (Vendedor ven : vendedores) {
+			if (ven.getCedula().equals(vendedor.getCedula())) {
+				return;
+			}
+		}
 		vendedores.add(vendedor);
 	}
 
@@ -30,5 +38,9 @@ public class AdminVentas {
 			}
 		}
 		return null;
+	}
+	
+	public ArrayList<Vendedor> listarVendedores() {
+		return vendedores;
 	}
 }

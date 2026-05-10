@@ -1,3 +1,8 @@
 Video NullPointerException:
 https://drive.google.com/file/d/1W3wg2zENwYoYMKC5lvEzHMWiMOBpaz7f/view?usp=sharing
 
+Video Postman agregar vendedor:
+https://drive.google.com/file/d/1P-SvmsySRUpFAY9FljKmi0F4hvpCb0SA/view?usp=sharing
+
+Video Postman calcular sueldo:
+https://drive.google.com/file/d/1DPoFs23ocEGsi0CaHLrsax5e2x7xFGgx/view?usp=sharing
