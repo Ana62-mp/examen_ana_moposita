@@ -11,7 +11,7 @@ public class VendedorTest {
 	@Test
 	public void validarCalcularSueldoVendedor() {
 		// Arrange
-		Vendedor vendedor = new Vendedor("1723456789");
+		Vendedor vendedor = new Vendedor("1723456789", "V");
 		vendedor.setSueldoFijo(500.0);
 
 		// Act

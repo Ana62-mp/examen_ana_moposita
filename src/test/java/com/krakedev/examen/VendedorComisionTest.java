@@ -11,7 +11,7 @@ public class VendedorComisionTest {
 	@Test
 	public void validarCalcularSueldoVendedorComision() {
 		// Arrange
-		VendedorComision vendedor = new VendedorComision("1723456789");
+		VendedorComision vendedor = new VendedorComision("1723456789", "C");
 		vendedor.setNumeroVentas(5);
 		vendedor.setComisionPorVenta(20.0);
 		

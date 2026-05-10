@@ -2,13 +2,15 @@ package com.krakedev.examen.entidades;
 
 public class Vendedor {
 	private String cedula;
+	private String tipo;
 	private int numeroVentas;
 	private double sueldoFijo;
 	private double comisionPorVenta;
 
-	public Vendedor(String cedula) {
+	public Vendedor(String cedula, String tipo) {
 		super();
 		this.cedula = cedula;
+		this.tipo = tipo;
 	}
 
 	public String getCedula() {
@@ -17,6 +19,14 @@ public class Vendedor {
 
 	public void setCedula(String cedula) {
 		this.cedula = cedula;
+	}
+
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
 	}
 
 	public int getNumeroVentas() {
@@ -49,7 +59,7 @@ public class Vendedor {
 
 	@Override
 	public String toString() {
-		return "Vendedor [cedula=" + cedula + ", numeroVentas=" + numeroVentas + ", sueldoFijo=" + sueldoFijo
-				+ ", comisionPorVenta=" + comisionPorVenta + "]";
+		return "Vendedor [cedula=" + cedula + ", tipo=" + tipo + ", numeroVentas=" + numeroVentas + ", sueldoFijo="
+				+ sueldoFijo + ", comisionPorVenta=" + comisionPorVenta + "]";
 	}
 }

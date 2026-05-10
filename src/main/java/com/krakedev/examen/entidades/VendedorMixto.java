@@ -2,8 +2,8 @@ package com.krakedev.examen.entidades;
 
 public class VendedorMixto extends Vendedor {
 
-	public VendedorMixto(String cedula) {
-		super(cedula);
+	public VendedorMixto(String cedula, String tipo) {
+		super(cedula, tipo);
 	}
 
 	@Override
@@ -13,7 +13,7 @@ public class VendedorMixto extends Vendedor {
 
 	@Override
 	public String toString() {
-		return "VendedorMixto [cedula=" + getCedula() + ", numeroVentas=" + getNumeroVentas() + ", sueldoFijo="
-				+ getSueldoFijo() + ", comisionPorVenta=" + getComisionPorVenta() + "]";
+		return "VendedorMixto [cedula=" + getCedula() + ", tipo=" + getTipo() + ", numeroVentas=" + getNumeroVentas()
+				+ ", sueldoFijo=" + getSueldoFijo() + ", comisionPorVenta=" + getComisionPorVenta() + "]";
 	}
 }
